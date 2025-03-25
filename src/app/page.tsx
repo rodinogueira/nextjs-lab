@@ -15,19 +15,9 @@ const FlexboxExamples = () => {
 
   return (
     <>
-      <div className="flex gap-4 w-1/2">
-        <div className="w-1/2 bg-blue-500 p-4 text-white">Container 1</div>
-        <div className="w-1/2 bg-green-500 p-4 text-white">Container 2</div>
-      </div>
-
-      {/* 11. Um item fixo, outro flexível */}
-      <div className="flex gap-4 w-1/2">
-        <div className="flex flex-row w-full gap-8 bg-white p-4 shadow-md">
-        {/* ela ocupará exatamente 1/3 da largura do contêiner pai */}
-          <div className="bg-orange-500 p-4 text-white w-1/3">20 fixo</div>
-          {/* flex-1 → Ocupação flexível (cresce para preencher o espaço restante). */}
-          <div className="flex-1 bg-amber-800 p-4 text-white">21 - flex-1</div>
-        </div>
+      <div className="flex flex-col md:flex-row md:w-1/2 md:mx-auto gap-4 mx-4 m-4">
+        <div className="w-full bg-blue-500 p-4 text-white">Container 1</div>
+        <div className="w-full bg-green-500 p-4 text-white">Container 2</div>
       </div>
 
       <div className="flex flex-col min-h-screen justify-center items-center">
