@@ -15,6 +15,12 @@ const FlexboxExamples = () => {
 
   return (
     <>
+      <h1 className="text-gray-700 text-2xl sm:text-sm md:text-9xl xl:text-lg">Rodrigo Nogueira FullStack Developer</h1>
+      <div className="flex flex-col md:flex-row md:w-1/2 gap-8 justify-start bg-white p-4 shadow-md">
+          <div className="w-full bg-green-500 p-4 text-white">1</div>
+          <div className="w-full bg-gray-300 p-4 text-white">2</div>
+      </div>
+
       <div className="flex flex-col md:flex-row md:w-1/2 md:mx-auto gap-4 mx-4 m-4">
         <div className="w-full bg-blue-500 p-4 text-white">Container 1</div>
         <div className="w-full bg-green-500 p-4 text-white">Container 2</div>
