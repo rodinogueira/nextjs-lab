@@ -15,6 +15,16 @@ const FlexboxExamples = () => {
 
   return (
     <>
+      {/* 1. Grid && col-span */}
+      <div className="grid grid-cols-3 md:w-1/2 gap-8 bg-white p-4 shadow-md">
+          <div className="col-span-2 w-full bg-green-500 p-4 text-white">1</div>
+          <div className="w-full bg-gray-300 p-4 text-white">2</div>
+          <div className="w-full bg-red-300 p-4 text-white">3</div>
+          <div className="w-full bg-blue-400 p-4 text-white">4</div>
+          <div className="col-span-2 w-full bg-yellow-300 p-4 text-white">5</div>
+          <div className="w-full bg-purple-300 p-4 text-white">6</div>
+      </div>
+
       <h1 className="text-gray-700 text-2xl sm:text-sm md:text-9xl xl:text-lg">Rodrigo Nogueira FullStack Developer</h1>
       <div className="flex flex-col md:flex-row md:w-1/2 gap-8 justify-start bg-white p-4 shadow-md">
           <div className="w-full bg-green-500 p-4 text-white">1</div>
